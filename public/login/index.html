@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <!-- HEADER -->
+    
+    <header>
+      <img src="../assets/images/logo.png" alt="logo">
+      
+    </header>
+
+    <!-- MAIN -->
+    <div class="wrapper">
+      <div class="form-wrapper sign-in">
+        <form action="">
+          <h2>Login</h2>
+          <div class="input-group">
+            <input id="login_username" type="text" required />
+            <label for="login_username">Username</label>
+          </div>
+          <div class="input-group">
+            <input id="login_password" type="password" required />
+            <label for="login_password">Password</label>
+          </div>
+          <div class="remember">
+            <input id="login_checkbox" type="checkbox" />
+            <label for="login_checkbox">Remember me</label>
+          </div>
+          <button type="submit">LogIn</button>
+          <div class="signUp-link">
+            <!-- <p><span>Forgot Password?</span></p> -->
+            <p>
+              Don't have an account?
+              <a href="#" class="signUpBtn-link">Sign-Up</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-wrapper sign-up">
+        <form action="">
+          <h2>Sign Up</h2>
+          <div class="input-group">
+            <input id="signup_username" type="text" required />
+            <label for="signup_username">Username</label>
+          </div>
+          <div class="input-group">
+            <input id="signup_email" type="email" required />
+            <label for="signup_email">Email</label>
+          </div>
+          <div class="input-group">
+            <input id="signup_password" type="password" required />
+            <label for="signup_password">Password</label>
+          </div>
+          <div class="remember">
+            <input id="signup_checkbox" type="checkbox" />
+            <label for="signup_checkbox"
+              >I agree to the terms & conditions</label
+            >
+          </div>
+          <button type="submit">SignUp</button>
+          <div class="signUp-link">
+            <p>
+              Already have an account?
+              <a href="#" class="signInBtn-link">Sign-In</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
