@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #dcc5b4;
+    background-image: url("../images/backgroundImg-removebg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+}
+
+a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-right: 40;
+}
+
+p {
+    margin: 30px 0;
+    font-weight: 600;
+}
+
+button {
+    color: #000000;
+    font-size: 20;
+    font-weight: 600;
+    padding: 10 20;
+    border: none;
+    /* background-color: #E9E5E2; */
+    background: transparent;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img[alt='logo'] {
+    height: 120px;
+    width: 280px;
+    background: transparent;
+}
+
+.navButton {
+    display: flex;
+}
+
+.log-btn a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+    padding: 15px 50px;
+    border: 1.5px solid #000000;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    
+}
+
+/* MAIN */
+main {
+    display: flex;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 70%;
+    border-radius: 20px;
+    margin: auto;
+    margin-top:60px ;
+}
+.command{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #000000 solid 1px;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.command_icon{
+    font-size: 120;
+}
+.command button:hover {
+    text-decoration: underline;
+}
+
+.midContainer {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.action{
+    text-align: center;
+}
+.action button {
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #ffffff;
+    border-radius: 15px;
+    background-color: #000000;
+}
+
+.action button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}

@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <title>
+    Emo-talk
+  </title>
+  <link rel="stylesheet" href="style/css/style.css">
+  <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style/css/emoji.css">
+  <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+
+<body>
+  <header>
+    <img src="style/images/logo-removebg.png" alt="logo">
+    <div class="navButton">
+      <ul>
+        <li><a href="#">Command</a></li>
+        <li><a href="#">Reports</a></li>
+      </ul>
+      <div class="log-btn">
+        <a href="../../index.html">Log Out</a>
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <div class="command">
+      <i class="uil uil-music command_icon"></i>
+      <button type="submit">Import Audio</button>
+    </div>
+    <div class="midContainer">
+      <div class="emoji">
+        <img class="idle">
+      </div>
+      <div class="action">
+        <p>No audio clip selected...!</p>
+        <button type="submit">Detect Emotion</button>
+      </div>
+    </div>
+    <div class="command">
+      <i class="uil uil-microphone command_icon"></i>
+      <button type="submit">Record Audio</button>
+    </div>
+
+  </main>
+
+  <script src="recognition.js"></script>
+</body>
+
+</html>
