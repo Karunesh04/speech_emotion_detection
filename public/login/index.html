@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LogIn</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
   </head>
@@ -21,23 +21,19 @@
     <!-- MAIN -->
     <div class="wrapper">
       <div class="form-wrapper sign-in">
-        <form action="">
+        <form action="" method="">
           <h2>LogIn</h2>
           <div class="input-group">
-            <input id="login_username" type="text" required />
+            <input id="login_username" name="username" type="text" required />
             <label for="login_username">Username</label>
           </div>
           <div class="input-group">
-            <input id="login_password" type="password" required />
+            <input id="login_password" name="password" type="password" required />
             <label for="login_password">Password</label>
           </div>
-          <div class="remember">
-            <input id="login_checkbox" type="checkbox" />
-            <label for="login_checkbox">Remember me</label>
-          </div>
+          
           <button type="submit">LogIn</button>
           <div class="signUp-link">
-            <!-- <p><span>Forgot Password?</span></p> -->
             <p>
               Don't have an account?
               <a href="#" class="signUpBtn-link">Sign-Up</a>
@@ -47,26 +43,17 @@
       </div>
 
       <div class="form-wrapper sign-up">
-        <form action="">
+        <form action="" method="">
           <h2>SignUp</h2>
           <div class="input-group">
-            <input id="signup_username" type="text" required />
+            <input id="signup_username" name="username" type="text" required />
             <label for="signup_username">Username</label>
           </div>
           <div class="input-group">
-            <input id="signup_email" type="email" required />
-            <label for="signup_email">Email</label>
-          </div>
-          <div class="input-group">
-            <input id="signup_password" type="password" required />
+            <input id="signup_password" name="password"  type="password" required />
             <label for="signup_password">Password</label>
           </div>
-          <div class="remember">
-            <input id="signup_checkbox" type="checkbox" />
-            <label for="signup_checkbox"
-              >I agree to the terms & conditions</label
-            >
-          </div>
+          
           <button type="submit">SignUp</button>
           <div class="signUp-link">
             <p>
@@ -77,6 +64,21 @@
         </form>
       </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="login.js"></script>
+    <script>
+      
+        const signInBtnLink = document.querySelector(".signInBtn-link"),
+          signUpBtnLink = document.querySelector(".signUpBtn-link"),
+          wrapper = document.querySelector(".wrapper");
+
+        signUpBtnLink.addEventListener("click", () => {
+          wrapper.classList.toggle("active");
+        });
+
+        signInBtnLink.addEventListener("click", () => {
+          wrapper.classList.toggle("active");
+        });
+
+    </script>
   </body>
 </html>
